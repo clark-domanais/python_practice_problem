@@ -11,3 +11,8 @@ from collections import Counter
 count = Counter(numbers)
 duplicates = [num for num, freq in count.items() if freq > 1]
 
+# Display duplicates
+if duplicates:
+    print("Numbers that have duplicates:", duplicates)
+else:
+    print("No duplicates found in the list.")
