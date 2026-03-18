@@ -10,6 +10,13 @@ def main():
             except ValueError:
                 print("Please enter a valid number.")
 
+    #Compute first number minus the remaining numbers
+    result = numbers[0]
+    for n in numbers[1:]:
+        result -= n
+
+    print("Result:", result)
+
 
 if __name__ == "__main__":
     main()
